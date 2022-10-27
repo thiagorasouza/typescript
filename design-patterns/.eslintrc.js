@@ -15,5 +15,11 @@ module.exports = {
     ecmaVersion: "latest",
   },
   plugins: ["@typescript-eslint"],
-  rules: {},
+  rules: {
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": [
+      "error",
+      { allow: ["private-constructors"] },
+    ],
+  },
 };

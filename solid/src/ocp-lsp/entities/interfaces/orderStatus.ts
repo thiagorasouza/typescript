@@ -1,0 +1,1 @@
+type OrderStatus = "open" | "closed";

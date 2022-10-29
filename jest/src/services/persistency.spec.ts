@@ -16,6 +16,10 @@ function mockOrder() {
   return order;
 }
 describe("Persistency Test Suite", () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
   it("should return undefined", () => {
     const sut = new Persistency();
     const order = mockOrder();

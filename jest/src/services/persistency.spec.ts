@@ -15,6 +15,7 @@ function mockOrder() {
 
   return order;
 }
+
 describe("Persistency Test Suite", () => {
   afterEach(() => {
     jest.clearAllMocks();

@@ -1,7 +1,7 @@
 import { MessageProtocol } from "./interfaces/message-protocol";
 
 export class Message implements MessageProtocol {
-  sendMessage(msg: string) {
+  sendMessage(msg: string): void {
     console.log("Message:", msg);
   }
 }
